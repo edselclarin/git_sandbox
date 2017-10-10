@@ -58,16 +58,19 @@ Your local repo is now ready for your changes.
 ~~~~
 
 ### Commit and Push Changes Upstream
-NOTE: Recommended that you create a switch to a new branch before making changes.  If the intent is to commit to the master branch, then proceed with these steps.
-1. Add files to commit.
+1. Switch to a new branch, and set it up to track the remote branch from origin.
 ~~~~
-    git add .
+    git checkout --track origin/<new branch name>
 ~~~~
-2. Commit changes.
+2. Add files to commit.
+~~~~
+    git add <file1> <file2> ...
+~~~~
+3. Commit changes.
 ~~~~
     git commit -m <commit message>
 ~~~~
-3. Push upstream.
+4. Push upstream.
 ~~~~
     git push
 ~~~~
