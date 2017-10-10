@@ -11,7 +11,7 @@ Run the following commands with your favorite shell program. (cmd, powershell, b
 
 ### Clone the Repository on your Local Drive
 ~~~~
-    git clone <Repository URL>
+    git clone <repository URL>
 ~~~~
 
 Your local repo is now ready for your changes.
@@ -40,7 +40,7 @@ Your local repo is now ready for your changes.
 ~~~~
 6. Commit changes.
 ~~~~
-    get commit -m <Commit message>
+    git commit -m <commit message>
 ~~~~
 7. Push new branch along with changes upstream.
 ~~~~
@@ -57,4 +57,17 @@ Your local repo is now ready for your changes.
     git diff
 ~~~~
 
-####
+### Commit and Push Changes Upstream
+NOTE: Recommended that you create a switch to a new branch before making changes.  If the intent is to commit to the master branch, then proceed with these steps.
+1. Add files to commit.
+~~~~
+    git add .
+~~~~
+2. Commit changes.
+~~~~
+    git commit -m <commit message>
+~~~~
+3. Push upstream.
+~~~~
+    git push
+~~~~
